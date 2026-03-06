@@ -35,7 +35,6 @@ router.post("/", (req, res) => {
     const sortedCharacters = sortCharacters(data);
 
     return res.status(200).json({
-      message: "Characters sorted successfully.",
       word: sortedCharacters
     });
 
